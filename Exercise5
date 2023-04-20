@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner n1 = new Scanner(System.in);
+    double cent;
+    double metros;
+    System.out.println("Bem vindo ao nosso conversor, Digite os metros que vc quer converter para centimetros: ");
+    metros = n1.nextDouble();
+    cent = metros*100;
+    System.out.println("Esse valor é correspondente a " + cent + "  centimetros"); 
+  }
+}

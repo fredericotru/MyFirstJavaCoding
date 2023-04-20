@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  Scanner n1 = new Scanner(System.in);
+  double area1;
+  double areatotal;
+  double areaX2;
+  System.out.println("Digite um lado do quadrado : ");
+  area1 = n1.nextDouble();
+  areatotal = area1*area1; 
+  areaX2 = areatotal*2;
+  System.out.println("A area do seu quadrado é  " + areatotal);
+  System.out.println("O dobro da desta area  é  " + areaX2);
+  n1.close();
+  }
+}

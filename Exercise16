@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  double area;
+  double tintanec;
+  double valortotal;
+  Scanner n = new Scanner(System.in);
+    System.out.println("Digite a area em m² a ser pintada...");
+    area = n.nextDouble();
+    tintanec = area/3;
+    System.out.println("A quantidade de tinta que vc precisa é   " + tintanec + "  galões de 18L. ");
+     valortotal = tintanec*80;
+    System.out.println("o valor total da sua compra é  " + valortotal);           
+  }
+}

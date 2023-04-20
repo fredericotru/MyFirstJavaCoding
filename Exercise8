@@ -1,0 +1,15 @@
+import java.util.Scanner; 
+class Main {
+  public static void main(String[] args) {
+  double salario;
+  double hora;
+  double valorhora;
+  Scanner n1 = new Scanner(System.in);
+  System.out.println("Qual é o seu salário? Digite abaixo");
+  salario = n1.nextDouble();
+  System.out.println("Quantas horas vc trabalha por mês? Digite abaixo");
+  hora = n1.nextDouble();
+  valorhora = salario/hora;
+  System.out.printf("O valor da sua hora trabalhada é: R$ %.2f", valorhora);//tivemos que usar outro formato do print para mostrar o valor com duas casas decimais 
+  }
+}

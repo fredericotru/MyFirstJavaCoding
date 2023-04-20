@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  int hora;
+  double valorhora;
+  double inss;
+  double IR;
+  double sindicato;
+  double salariobruto;
+  double salarioliquido;
+  Scanner n = new Scanner (System.in);
+    System.out.println("Digite o valor de quanto vc ganha por hora:");
+    valorhora = n.nextDouble();
+    System.out.println("Digite quantas horas vc trabalha por mês:");
+    hora = n.nextInt();
+    salariobruto = hora*valorhora;
+    inss = salariobruto*0.08;
+    IR=salariobruto*0.11;
+    sindicato = salariobruto * 0.05;
+    salarioliquido=salariobruto-inss-IR-sindicato;
+    System.out.printf("Seu salario bruto é: %.2f\n", salariobruto);
+    System.out.printf("Valor de INSS é: %.2f\n ", inss);
+    System.out.printf("Valor do IR é: %.2f\n", IR);
+    System.out.printf("Valor do sidicato é : %.2f\n", sindicato);
+    System.out.printf("Valor do Salario Liquido: %.2f\n", salarioliquido);
+    
+  }
+}

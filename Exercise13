@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    String sexo;
+    double altura;
+    double pesoideal = 0;
+    Scanner n1 = new Scanner(System.in);
+    System.out.println("Ligue o CAPSLOCK. Digite H se você é homem ou M se você é mulher: ");
+    sexo = n1.next();
+    System.out.println("Digite sua altura:");
+    altura = n1.nextDouble();
+    if (sexo.equals("H")) {
+      pesoideal = (72.7 * altura) - 58;
+    } else if (sexo.equals("M")) {
+      pesoideal = (62.1 * altura) - 44.7;
+    }   
+    System.out.println("Seu peso ideal é: " + pesoideal);
+  }
+}

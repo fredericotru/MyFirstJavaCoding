@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class Mostreseunumero {
+  public static void main(String[] args) {
+    Scanner texto = new Scanner(System.in);
+    String str;
+    System.out.println("entre com um numero:");
+    str =texto.nextLine();
+    System.out.println("o numero que vc digitou é:"+ str);
+    texto.close();
+  }
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+  
+class Main {
+  public static void main(String[] args) {
+    Scanner n1 = new Scanner(System.in);
+    double b1;
+    double b2;
+    double b3;
+    double b4;
+    double mediab;
+    System.out.println("Digite sua Nota do 1º Bimestre : ");
+    b1 = n1.nextDouble();
+    System.out.println("Digite sua Nota do 2º Bimestre : ");
+    b2 = n1.nextDouble();
+    System.out.println("Digite sua Nota do 3º Bimestre : ");
+    b3 = n1.nextDouble();
+    System.out.println("Digite sua Nota do 4º Bimestre : ");
+    b4 = n1.nextDouble();
+    mediab = b1+b2+b3+b4/4;
+    System.out.println("A media de nota do seu bimestre é  " + b4);  
+  }
+}

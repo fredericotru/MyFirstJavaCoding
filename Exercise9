@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  double faren;
+  double cel;
+  Scanner n1 = new Scanner(System.in);
+  System.out.println("Digite a temperatura em F");
+  faren = n1.nextDouble();
+  cel = 5*((faren-32)/9);
+  System.out.println("Em Celsius:" + cel + "º C");
+  n1.close();
+  }
+}

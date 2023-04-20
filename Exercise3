@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner n1 = new Scanner(System.in);
+    int num1;
+    int num2;
+    int resultado;
+    System.out.println("Digite 1 num :");
+    num1 = n1.nextInt();
+    System.out.println("Digite um 2º num:");
+    num2 = n1.nextInt();
+    resultado = num1 + num2;
+    System.out.println("O resultado da Soma é: " + resultado );     
+  }
+}

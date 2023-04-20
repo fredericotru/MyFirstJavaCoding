@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  Scanner n1 = new Scanner(System.in);
+  double raio;
+  double area;
+  System.out.println("Favor digitar o raio para descobrir a area : ");
+  raio = n1.nextDouble();
+  area = 3.14 * Math.pow(raio,2);
+  System.out.println(" A área do circulo é:  "+ area );
+  n1.close();
+  }
+}

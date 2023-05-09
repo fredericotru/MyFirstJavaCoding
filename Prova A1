@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    String req01name;
+    double req02peso;
+    double req03agua;
+    double req04_qnt_ideal;
+    double req05_qnt_nec;
+    Scanner n = new Scanner(System.in);    
+    System.out.println("Olá, Digite seu nome:");
+    req01name = n.next();
+    System.out.println("Agora, Digite seu peso:");
+    req02peso = n.nextDouble();
+    System.out.println("Por ultimo, Digite quantos litros de agua você bebe por dia:");
+    req03agua = n.nextDouble();
+    req04_qnt_ideal = (req02peso*35)/1000;
+    req05_qnt_nec = req04_qnt_ideal-req03agua;
+    System.out.println("Nome:"+req01name);
+    System.out.println("Peso:"+req02peso);
+    System.out.println("Qnt de agua ingerida por dia:"+Math.round(req03agua));
+    System.out.println("Quantidade ideal a ser ingerida:"+Math.round(req04_qnt_ideal));    
+    if (req05_qnt_nec>=0) {
+    System.out.println("Continue focado em se hidratar por hoje, ainda faltam " + Math.round(req05_qnt_nec)+ "litro(s)! Você consegue!");
+} else {
+    System.out.println("Parabéns, você atingiu a meta de hidratação diária!");
+    
+}
+
+    
+  }
+}
